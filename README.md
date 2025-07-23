@@ -2,6 +2,10 @@
 
 An interactive web-based tool to select facial landmarks on an image using MediaPipe's Face Mesh. You can create multiple named areas, select landmarks for each, and copy the landmark indices to your clipboard.
 
+## Tool Overview
+
+![Tool Overview](static/ai1.jpg)
+
 ## Features
 
 -   **Interactive Landmark Selection:** Click on the facial landmarks detected by MediaPipe to select them.
