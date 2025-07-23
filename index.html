@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Landmark Selection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="/static/favicon.ico" alt="Site Logo" class="logo">
+        <h1>Facial Landmark Selection</h1>
+    </div>
+    <p class="description">
+        An interactive tool to select facial landmarks on an image using MediaPipe's Face Mesh.
+        Create multiple named areas, select landmarks for each, and copy the landmark indices to your clipboard.
+        The canvas is fully responsive and adapts to window resizing.
+    </p>
+    <div class="container">
+        <div class="image-container">
+            <img id="image" src="/static/ai1.jpg" alt="Face Image">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="indices-container">
+            <h2>Selected Landmark Areas</h2>
+            <div class="area-controls">
+                <button id="add-area-btn">+ New</button>
+            </div>
+            <div id="areas-list"></div>
+        </div>
+    </div>
+    <div id="toast-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+    <script src="/static/script.js"></script>
+    <footer>
+        <p>&copy; 2025 Facial Landmark Selector. All Rights Reserved.</p>
+        <p>
+            Powered by <a href="https://mediapipe.dev/" target="_blank">MediaPipe</a> | 
+            Learn more about <a href="https://developers.google.com/mediapipe/solutions/vision/face_landmarker" target="_blank">Face Landmarker</a>
+        </p>
+    </footer>
+</body>
+</html>
