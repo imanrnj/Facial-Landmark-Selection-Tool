@@ -4,7 +4,7 @@ An interactive web-based tool to select facial landmarks on an image using Media
 
 ## Tool Overview
 
-![Tool Overview](static/ai1.jpg)
+![Tool Overview](static/tool%20overview.png)
 
 ## Features
 
